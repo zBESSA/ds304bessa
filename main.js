@@ -11,7 +11,7 @@ app.use(cors());
 const port = process.env.PORT || 3000;
 
 app.get('/', function(req,res){
-    res.sendFile(path.join(__dirname+'/inde.html'));
+    res.sendFile(path.join(__dirname+'/index.html'));
 });
 
 app.listen(port,() => console.log(`Estou escutando na porta  ${port}`));
